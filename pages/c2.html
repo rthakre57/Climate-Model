@@ -48,7 +48,23 @@
     .sub-sub-list {
       margin-left: 40px;
     }
-  </style>
+  
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
 </head>
 <body>
   <div class="container">
@@ -162,5 +178,9 @@
       </li>
     </ul>
   </div>
+  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/uMCIEs6DtOw"
+          frameborder="0" allowfullscreen></iframe>
+</div>
 </body>
 </html>
