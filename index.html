@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Change Project Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 20%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover, .sidebar a.active {
+      background-color: #34495e;
+    }
+
+    .main-content {
+      width: 80%;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <h2>Project Index</h2>
+    <a href="pages/c1.html" class="tab-link" target="content-frame">Title Page</a>
+    <a href="pages/c2.html" class="tab-link" target="content-frame">Project Index</a>
+    <a href="pages/c3.html" class="tab-link" target="content-frame">Climate Modelling Flowchart</a>
+    <a href="pages/c4.html" class="tab-link" target="content-frame">Climate Modelling Report</a>
+    <a href="pages/c5.html" class="tab-link" target="content-frame">Flowchart-Introduction</a>
+    <a href="pages/c6.html" class="tab-link" target="content-frame">Fundamentals of Climate Science</a>
+    <a href="pages/c7.html" class="tab-link" target="content-frame">Fundamentals of Climate Science-Flowchart</a>
+    <a href="pages/c8.html" class="tab-link" target="content-frame">Overview of Mathematical Modeling</a>
+    <a href="pages/c9.html" class="tab-link" target="content-frame">Flowchart-Overview of Math Modeling</a>
+    <a href="pages/c10.html" class="tab-link" target="content-frame">Systems Theory and Climate Dynamics</a>
+    <a href="pages/c11.html" class="tab-link" target="content-frame">Systems Theory - Flowchart</a>
+    <a href="pages/c12.html" class="tab-link" target="content-frame">Math Formulation of Climate Models</a>
+    <a href="pages/c13.html" class="tab-link" target="content-frame">Math Formulation (continued)</a>
+    <a href="pages/c14.html" class="tab-link" target="content-frame">Model Calibration and Validation</a>
+    <a href="pages/c15.html" class="tab-link" target="content-frame">Flowchart - Calibration and Validation</a>
+    <a href="pages/c16.html" class="tab-link" target="content-frame">Simulation and Analysis</a>
+    <a href="pages/c17.html" class="tab-link" target="content-frame">Simulation - Flowchart</a>
+    <a href="pages/c18.html" class="tab-link" target="content-frame">Applications and Policy Implications</a>
+    <a href="pages/c19.html" class="tab-link" target="content-frame">Policy - Flowchart</a>
+    <a href="pages/c20.html" class="tab-link" target="content-frame">Challenges and Limitations</a>
+    <a href="pages/c21.html" class="tab-link" target="content-frame">Challenges - Flowchart</a>
+    <a href="pages/c22.html" class="tab-link" target="content-frame">Future Directions</a>
+    <a href="pages/c23.html" class="tab-link" target="content-frame">Future - Flowchart</a>
+    <a href="pages/c24.html" class="tab-link" target="content-frame">Climate Modelling Report</a>
+    <a href="pages/c25.html" class="tab-link" target="content-frame">Bibliography</a>
+    <a href="pages/c26.html" class="tab-link" target="content-frame">Radiative-Convective Models</a>
+    <a href="pages/c27.html" class="tab-link" target="content-frame">General Circulation Models</a>
+    <a href="pages/c28.html" class="tab-link" target="content-frame">Differential Equations</a>
+    <a href="pages/c29.html" class="tab-link" target="content-frame">Flowchart: Diff. Equations</a>
+    <a href="pages/c30.html" class="tab-link" target="content-frame">Heat and Mass Transfer</a>
+    <a href="pages/c31.html" class="tab-link" target="content-frame">Climate Modelling Flowchart</a>
+    <a href="pages/c32.html" class="tab-link" target="content-frame">Carbon Cycle Modeling</a>
+    <a href="pages/c33.html" class="tab-link" target="content-frame">Coupled Subsystems</a>
+    <a href="pages/c34.html" class="tab-link" target="content-frame">ML Model Overview</a>
+    <a href="pages/c35.html" class="tab-link" target="content-frame">ML System Model Formulation</a>
+    <a href="pages/c36.html" class="tab-link" target="content-frame">ML for Climate Change</a>
+    <a href="pages/c37.html" class="tab-link" target="content-frame">Climate Dynamics Simulator</a>
+  </div>
+
+  <!-- Main content area -->
+  <div class="main-content">
+    <iframe name="content-frame" src="pages/c1.html"></iframe>
+  </div>
+
+  <!-- Optional: Add app.js for highlighting selected tab -->
+  <script>
+    const links = document.querySelectorAll('.tab-link');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
